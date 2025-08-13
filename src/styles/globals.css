@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+:root {
+  --text: #1A201D;
+  --primary: #2A8851;
+  --secondary: #FFEC89;
+  --background: #ffffff;
+  --foreground: #171717;
+  --light-pink:#F7CDCC;
+  --light-green:#E0ECE4;
+  --dark-skyblue:#C9DAF1;
+  --light-skyblue:#E4EDF8;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-dark-pink: var(--pink);
+  --color-light-pink: var(--color-light-pink);
+  --color-light-green: var(--light-green);
+  --color-dark-skyblue: var(--dark-skyblue);
+  --color-light-skyblue: var(--color-light-skyblue);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-title: var(--font-stix);
+  --font-body: var(--font-figtree);
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #FFFFFF;
+  }
+} */
+
+body {
+  @apply bg-gray-100 text-foreground font-body
+}
+
+h1,h2,h3,h4,h5,h6{
+  font-weight: 400;
+}
+
+.cta-primary{
+  @apply bg-primary text-white rounded px-8 py-3
+}
+
+.cta-secondary{
+  @apply bg-secondary text-primary rounded px-8 py-3
+}
