@@ -13,7 +13,7 @@ const Footer = (props: Props) => {
         src={"/assets/images/footer-top.svg"}
         width={1740}
         height={20}
-        alt="facebook-icon"
+        alt="Footer decorative wave"
         className="absolute -top-6"
       />
       <div className="flex flex-col md:flex-row justify-between px-24 py-20 text-md">
@@ -67,7 +67,7 @@ const Footer = (props: Props) => {
                   src={"/assets/images/andriod.svg"}
                   width={150}
                   height={42}
-                  alt="andriod-icon"
+                  alt="Get it on Google Play"
                 />
               </Link>
             </li>
@@ -77,7 +77,7 @@ const Footer = (props: Props) => {
                   src={"/assets/images/ios.svg"}
                   width={150}
                   height={42}
-                  alt="andriod-icon"
+                  alt="Download on the App Store"
                 />
               </Link>
             </li>
@@ -97,7 +97,7 @@ const Footer = (props: Props) => {
                   src={"/assets/images/audit-badge.svg"}
                   width={160}
                   height={87}
-                  alt="andriod-icon"
+                  alt="Audit badge"
                 />
               </Link>
             </li>

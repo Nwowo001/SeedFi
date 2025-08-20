@@ -1,10 +1,84 @@
 import { Product } from "@/types";
 
-export const products:Product[] = [
-    {
-        category: 'LENDING',
-        title: 'Personal Loans',
-        desc: '',
-        href:''
+export const products: Product[] = [
+  {
+    category: "LENDING",
+    title: "Personal Loans",
+    desc: "Get instant access to loans in minutes, with \n repayment plans tailored to your needs and no \n collateral required.",
+    href: "/apply now",
+    image: "/assets/images/personal-loans.svg",
+    bgcolor: "#DFEDE5",
+    buttonText: "Apply Now",
+    cardHeightClass: "",
+    cardHeight: "h-full ",
+    imageConfig: {
+      width: 400,
+      height: 485,
+      containerClass: "w-60% h-80",
     },
-]
+  },
+  {
+    category: "B2B",
+    title: "Merchant Application",
+    desc: "Get instant access to loans in minutes, with \n repayment plans tailored to your needs and no \n collateral required.",
+    href: "/Create an account",
+    image: "/assets/images/merchant-application.svg",
+    bgcolor: "#F7CECC",
+    buttonText: "Create an account",
+    cardHeightClass: "",
+    cardHeight: "h-full lg:h-[50%]",
+    imageConfig: {
+      width: 254,
+      height: 254,
+      containerClass: "w-40% h-32",
+    },
+  },
+  {
+    category: "FINANCIAL HEALTH",
+    title: "Seedscore",
+    desc: "Your key to financial confidence.\n SeedScore is designed to empower individuals with \n the knowledge of their creditworthiness.",
+    href: "/Check your Score",
+    image: "/assets/images/seedscore.svg",
+    bgcolor: "#DEE7E2",
+    buttonText: "Check your seedscore",
+    cardHeightClass: "",
+    cardHeight: "h-full lg:h-[50%]",
+    imageConfig: {
+      width: 285,
+      height: 357,
+      containerClass: "w-40% h-40",
+    },
+  },
+  {
+    category: "CREDIT",
+    title: "Loan Calculator",
+    desc: "Use the calculator to see how much you can borrow, \n choose your repayment period, and get a quick look at \n your monthly payments—no sign-up needed.",
+    href: "/Calculate Now",
+    image: "/assets/images/loan calculator.svg",
+    bgcolor: "#FFF9DA",
+    buttonText: "Calculate Now",
+    cardHeightClass: "",
+    cardHeight: "h-full lg:h-[100%]",
+    imageConfig: {
+      width: 209,
+      height: 261,
+      containerClass: "w-70% h-32",
+    },
+  },
+  {
+    category: "BUSINESS FUNDING",
+    title: "FundMe",
+    desc: "Shop Now and Pay in Instalments. Our BNPL \n solution is designed to give you more purchasing \n  power without the burden of immediate payment.",
+    href: "/Get a Loan",
+    image: "/assets/images/fundme.svg",
+    bgcolor: "#E5EDF8",
+    buttonText: "Get a Loan",
+    cardHeightClass: "",
+    cardHeight: "h-full lg:h-[100%]",
+    imageConfig: {
+      width: 275,
+      height: 275,
+      containerClass: "w-30% h-32",
+    },
+  },
+];
