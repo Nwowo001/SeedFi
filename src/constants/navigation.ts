@@ -29,7 +29,7 @@ export const navItems: NavItem[] = [
     dropdown: [
       {
         label: 'Personal Loans',
-        href: '/product/person-loan',
+        href: '/product/personal-loan',
         desc: 'Get instant access to loans in minutes',
         icon: '/assets/icons/personal-loan.svg'
       },

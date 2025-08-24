@@ -8,7 +8,7 @@ const BlogCards = () => {
       {blog.map((item, idx) => (
         <div
           key={idx}
-          className="min-w-[280px] max-w-[320px] bg-white rounded-lg shadow-sm overflow-hidden"
+          className="min-w-[280px] max-w-[320px] bg-white rounded-2xl shadow-sm overflow-hidden"
         >
           {/* Image */}
           <div className="h-48 w-full relative">

@@ -1,6 +1,6 @@
 import { FuelingGrowth } from "@/types";
 import Image from "next/image";
-
+import { fuelingGrowth } from "@/constants/fuelingGrowth";
 interface FuelingGrowthCardProps {
   card: FuelingGrowth;
 }
@@ -66,7 +66,7 @@ const FuelingGrowthCard = ({ card }: FuelingGrowthCardProps) => {
           alt={card.category}
           width={card.imageConfig.width}
           height={card.imageConfig.height}
-          className="rounded-2xl object-cover"
+          className="rounded-2xl object-cover w-50%"
         />
       </div>
     </div>

@@ -8,7 +8,6 @@ const Blog = () => {
   const [atStart, setAtStart] = useState(true);
   const [atEnd, setAtEnd] = useState(false);
 
-  // Scroll handler
   const scroll = (direction: "left" | "right") => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth } = scrollRef.current;
@@ -46,7 +45,7 @@ const Blog = () => {
       <div className="relative max-w-7xl mx-auto px-6">
         {/* Title & Arrows */}
         <div className="flex justify-between items-center mb-6">
-          <p className="text-2xl font-bold font-body text-zinc-900">
+          <p className="text-xl lg:text-2xl font-bold font-body text-zinc-900">
             Your Guide to Smarter Money Moves
           </p>
           {/* Arrows - hidden on mobile */}
@@ -85,7 +84,7 @@ const Blog = () => {
 
         <div
           ref={scrollRef}
-          className="overflow-x-auto scrollbar-hide scroll-smooth"
+          className="overflow-x-auto scrollbar-hide scroll-smooth pb-7"
         >
           <BlogCards />
         </div>

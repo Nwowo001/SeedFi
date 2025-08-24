@@ -62,13 +62,13 @@ const Card: React.FC<CardProps> = ({ product }) => {
       </div>
 
       {product.image && (
-        <div className="flex-[0.4] relative  bottom-0 right-0 sm:absolute sm:bottom-0 sm:right-0 sm:flex-none  ">
+        <div className="flex-[0.5] self-end sm:absolute sm:bottom-0 sm:right-0 sm:flex-none">
           <Image
             src={product.image}
             alt={product.title}
             width={product.imageConfig.width}
             height={product.imageConfig.height}
-            className="  object-contain w-50% h-50% sm:w-[50%] md:w-auto"
+            className="object-contain w-50% h-50% sm:w-[50%] md:w-auto"
           />
         </div>
       )}

@@ -3,7 +3,7 @@ import { products } from "@/constants/products";
 import Card from "@/components/ui/Card";
 const ProductsAndServices = () => {
   return (
-    <section className="w-full mx-auto px-4 md:px-8 lg:px-16 py-12 bg-white">
+    <section className="w-full mx-auto px-4 md:px-8 lg:px-16 pt-12 lg:py-12 bg-white">
       <p className="font-figtree font-bold text-3xl md:text-3xl text-[#1A201D] mb-8">
         Products & Services
       </p>

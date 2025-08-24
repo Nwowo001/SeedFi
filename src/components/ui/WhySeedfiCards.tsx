@@ -5,7 +5,7 @@ import Image from "next/image";
 const WhySeedfiCards = () => {
   return (
     <div className="relative w-full px-4">
-      <div className="relative grid grid-cols-1 md:grid-cols-12 md:min-h-[700px] gap-12">
+      <div className="relative grid grid-cols-1 md:grid-cols-12 lg:min-h-[700px]  gap-12">
         {/* Card 1 */}
         <div className="relative md:absolute md:top-0 md:left-10 md:col-span-4">
           <div
@@ -55,7 +55,7 @@ const WhySeedfiCards = () => {
               alt=""
               width={200}
               height={80}
-              className="md:absolute md:-bottom-[107px] md:right-[50px]"
+              className="md:absolute md:-bottom-[80px] md:right-[50px] lg:h-90 h-50"
             />
           </div>
         </div>
@@ -82,13 +82,13 @@ const WhySeedfiCards = () => {
               alt=""
               width={260}
               height={83}
-              className="md:absolute md:top-1/2 md:left-full md:-translate-y-1/2"
+              className="rotate-[105.45deg] md:rotate-0 md:absolute md:top-1/2 md:left-full md:-translate-y-1/2 absolute -bottom-40"
             />
           </div>
         </div>
 
         {/* Card 4 */}
-        <div className="relative md:absolute lg:top-[470px] md:right-0 md:col-span-4 top-[-150px]">
+        <div className="relative md:absolute lg:top-[470px] md:right-0 md:col-span-4 top-[40px]">
           <div
             className="relative rounded-2xl p-8 pt-16 shadow-md border border-gray-100 max-w-md mx-auto"
             style={{ backgroundColor: whySeedfi[3].bgColor }}

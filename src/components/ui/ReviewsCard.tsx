@@ -1,5 +1,6 @@
 import React from "react";
 import { Reviews } from "@/types";
+import Image from "next/image";
 
 interface ReviewCardProps {
   review: Reviews;
@@ -16,7 +17,14 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
       {/* Quote icon */}
       <div className="mb-4">
         <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
-          <span className="text-gray-600 text-lg font-bold">"</span>
+          <span className="text-gray-600 text-lg font-bold">
+            <Image
+              src="/assets/icons/quote.svg"
+              alt=""
+              width={40}
+              height={40}
+            />
+          </span>
         </div>
       </div>
 

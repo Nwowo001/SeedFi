@@ -56,20 +56,18 @@ const Reviews = () => {
       : "none";
 
   return (
-    <section className="bg-white py-16 relative">
+    <section className="bg-white py-1 relative">
       <div className="max-w-7xl mx-auto px-6">
-        {/* Header */}
-        <div className="py-7 text-start">
-          <p className="text-3xl font-bold font-body text-zinc-900">
+        <div className="lg:py-7 text-start">
+          <p className="text-xl lg:text-[28px] font-bold font-body text-zinc-900">
             Real Stories. Real People. Real Impact.
           </p>
-          <p className="font-body text-lg font-medium text-zinc-600 mt-2">
+          <p className="font-body text-[16px] font-medium text-zinc-600 mt-2">
             What real people say about SeedFi
           </p>
         </div>
 
-        {/* Carousel Container */}
-        <div className="relative flex items-center justify-center">
+        <div className="relative flex items-center justify-center lg:py-0 py-7">
           {/* Left Arrow */}
           {cardsPerView > 1 && (
             <button
