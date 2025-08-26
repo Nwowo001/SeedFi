@@ -9,16 +9,16 @@ const WhySeedfiCards = () => {
         {/* Card 1 */}
         <div className="relative md:absolute md:top-0 md:left-10 md:col-span-4">
           <div
-            className="relative rounded-2xl p-8 pt-16 shadow-md border border-gray-100 max-w-md mx-auto"
+            className="relative rounded-2xl pl-10 pr-7 pt-6 pb-4 shadow-lg border border-gray-100 max-w-md mx-auto"
             style={{ backgroundColor: whySeedfi[0].bgColor }}
           >
-            <div className="absolute -top-6 left-0">
+            <div className="absolute -top-5 -left-5">
               <Image src={whySeedfi[0].icon} alt="" width={48} height={48} />
             </div>
             <p className="text-xl font-semibold text-gray-800 mb-4 italic">
               {whySeedfi[0].title}
             </p>
-            <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+            <p className="text-gray-600 leading-relaxed ">
               {whySeedfi[0].desc}
             </p>
           </div>
@@ -26,53 +26,53 @@ const WhySeedfiCards = () => {
             <Image
               src="/assets/images/empower dots.svg"
               alt=""
-              width={89}
-              height={106}
+              width={100}
+              height={190}
               className="md:absolute md:left-[40%] md:top-0"
             />
           </div>
         </div>
 
         {/* Card 2 */}
-        <div className="relative md:absolute md:top-[-40px] md:right-0 md:col-span-4 top-[-50px]">
+        <div className="relative md:absolute  md:top-[-40px] md:right-0 md:col-span-4 top-[-50px]">
           <div
-            className="relative rounded-2xl p-8 pt-16 shadow-md border border-gray-100 max-w-md mx-auto"
+            className="relative rounded-2xl pl-10 pr-7 pt-6 pb-4 shadow-md border border-gray-100 max-w-md mx-auto"
             style={{ backgroundColor: whySeedfi[1].bgColor }}
           >
-            <div className="absolute -top-6 left-0">
+            <div className="absolute -top-5 -left-5">
               <Image src={whySeedfi[1].icon} alt="" width={48} height={48} />
             </div>
             <p className="text-xl font-semibold text-gray-800 mb-4 italic">
               {whySeedfi[1].title}
             </p>
-            <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+            <p className="text-gray-600 leading-relaxed ">
               {whySeedfi[1].desc}
             </p>
           </div>
-          <div className=" lg:translate-y-70 flex justify-center md:block mt-0 md:mt-0">
+          <div className=" lg:translate-y-50 flex justify-center md:block mt-0 md:mt-0">
             <Image
               src="/assets/images/more dott.svg"
               alt=""
               width={200}
               height={80}
-              className="md:absolute md:-bottom-[80px] md:right-[50px] lg:h-90 h-50"
+              className="md:absolute md:-bottom-[80px] md:right-[70px] lg:h-70 h-50"
             />
           </div>
         </div>
 
         {/* Card 3 */}
-        <div className="relative md:absolute md:top-[360px] md:left-0 md:col-span-4 top-[-100px]">
+        <div className="relative md:absolute md:top-[320px] md:left-0 md:col-span-4 top-[-100px]">
           <div
-            className="relative rounded-2xl p-8 pt-16 shadow-md border border-gray-100 max-w-md mx-auto"
+            className="relative rounded-2xl pl-10 pr-7 pt-6 pb-4 shadow-md border border-gray-100 max-w-md mx-auto"
             style={{ backgroundColor: whySeedfi[2].bgColor }}
           >
-            <div className="absolute -top-6 left-0">
+            <div className="absolute -top-5 -left-5">
               <Image src={whySeedfi[2].icon} alt="" width={48} height={48} />
             </div>
             <p className="text-xl font-semibold text-gray-800 mb-4 italic">
               {whySeedfi[2].title}
             </p>
-            <p className="text-gray-600 leading-relaxed whitespace-pre-line">
+            <p className="text-gray-600 leading-relaxed ">
               {whySeedfi[2].desc}
             </p>
           </div>
@@ -88,12 +88,12 @@ const WhySeedfiCards = () => {
         </div>
 
         {/* Card 4 */}
-        <div className="relative md:absolute lg:top-[470px] md:right-0 md:col-span-4 top-[40px]">
+        <div className="relative md:absolute lg:top-[400px] md:right-0 md:col-span-4 top-[40px]">
           <div
-            className="relative rounded-2xl p-8 pt-16 shadow-md border border-gray-100 max-w-md mx-auto"
+            className="relative rounded-2xl pl-10 pr-7 pt-6 pb-4 shadow-md border border-gray-100 max-w-md mx-auto"
             style={{ backgroundColor: whySeedfi[3].bgColor }}
           >
-            <div className="absolute -top-6 left-0">
+            <div className="absolute -top-5 -left-5">
               <Image src={whySeedfi[3].icon} alt="" width={48} height={48} />
             </div>
             <p className="text-xl font-semibold text-gray-800 mb-4 italic">

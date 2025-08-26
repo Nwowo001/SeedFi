@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 
-const Carousel = () => {
+const OurPartnersCarousel = () => {
   const partners = [
     {
       src: "/assets/images/sterling.svg",
@@ -50,7 +50,6 @@ const Carousel = () => {
   return (
     <div className="overflow-hidden whitespace-nowrap">
       <div className="inline-flex animate-scroll">
-        {/* First set of logos */}
         {partners.map((partner, index) => (
           <div
             key={`first-${index}`}
@@ -66,7 +65,6 @@ const Carousel = () => {
             />
           </div>
         ))}
-        {/* Duplicate set for seamless infinite scroll */}
         {partners.map((partner, index) => (
           <div
             key={`second-${index}`}
@@ -85,4 +83,4 @@ const Carousel = () => {
     </div>
   );
 };
-export default Carousel;
+export default OurPartnersCarousel;

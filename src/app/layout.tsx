@@ -30,7 +30,7 @@ export default function RootLayout({
       <body className=" overflow-x-hidden">
         <div className="relative w-full">
           <Header />
-          <main className="w-full">{children}</main>
+          <main className="w-full bg-white">{children}</main>
           <Footer />
         </div>
       </body>

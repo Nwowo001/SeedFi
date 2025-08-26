@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative min-h-screen bg-[url('/assets/images/background-texture.svg')] bg-cover bg-center">
+    <section className="relative pb-35 lg:pb-0 bg-[url('/assets/images/background-texture.svg')] bg-cover bg-center">
       <div className="absolute bottom-0 -left-0 ">
         <Image
           src="/assets/images/sphere-full.svg"
@@ -66,7 +66,6 @@ const Hero = () => {
                 <p className="text-sm text-gray-600">Scan to get the app</p>
               </div>
 
-              {/* Divider line */}
               <svg
                 width="2"
                 height="40"
@@ -83,7 +82,6 @@ const Hero = () => {
                 />
               </svg>
 
-              {/* App store buttons */}
               <div className="flex flex-row gap-3">
                 <Image
                   src="/assets/images/Google Play.svg"
@@ -100,7 +98,6 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Mobile Get the App button and app store icons */}
             <div className="lg:hidden mb-8 ">
               <div className=" flex flex-row items-center gap-6 mb-8 sm:flex-row   justify-start">
                 <Link
@@ -109,7 +106,6 @@ const Hero = () => {
                 >
                   Get the App
                 </Link>
-                {/* Divider line */}
                 <svg
                   width="2"
                   height="40"
@@ -149,7 +145,6 @@ const Hero = () => {
           {/* Right content  */}
           <div className="flex-1 width-50% flex justify-center lg:justify-end items-center relative">
             <div className="relative">
-              {/* Main phone image */}
               <div className="relative z-20">
                 <Image
                   src="/assets/images/phone-on-herosection.svg"
@@ -161,7 +156,6 @@ const Hero = () => {
                 />
               </div>
 
-              {/* Decorative spheres around the phone */}
               <div className="absolute -top-0 -right-27 ">
                 <Image
                   src="/assets/images/split-sphere.svg"
@@ -174,7 +168,6 @@ const Hero = () => {
           </div>
         </div>
 
-        {/* NDIC Badge - Bottom center */}
         <div className="absolute bottom-10 right-40  flex justify-center lg:justify-end items-center gap-3 mt-12 lg:mt-12 lg:mr-14">
           <Image
             src="/assets/images/audit-badge.svg"

@@ -1,14 +1,14 @@
-import Carousel from "@/components/ui/OurPartners";
+import OurPartnersCarousel from "@/components/ui/OurPartners";
 import React from "react";
 
 const OurPartners = () => {
   return (
-    <section className="lg:py-16 bg-white py-10">
+    <section className="px-7 lg:px-2 lg:py-16 bg-white py-10">
       <div className="container mx-auto px-4">
-        <p className="font-figtree font-400 text-sm text-start  mb-10 text-gray-800">
+        <p className="font-figtree font-400 text-sm text-start  mb-5 text-gray-800">
           Our Partners
         </p>
-        <Carousel />
+        <OurPartnersCarousel />
       </div>
     </section>
   );
