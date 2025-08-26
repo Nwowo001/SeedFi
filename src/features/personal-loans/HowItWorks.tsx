@@ -1,75 +1,59 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-
+import { howitworks } from "@/constants/personal-loans/howItWorks";
 const HowItWorks = () => {
-  const steps = [
-    {
-      number: "1",
-      title: "Sign Up & Verify Your Identity",
-      description: "Download the SeedFi app, create your account, and verify your identity with your BVN and other required documents."
-    },
-    {
-      number: "2", 
-      title: "Complete your Profile",
-      description: "Provide key details like your employment and residential information to help us understand your eligibility."
-    },
-    {
-      number: "3",
-      title: "Apply & Accept Terms",
-      description: "Select your preferred amount and repayment plan, then agree to the terms and conditions to proceed."
-    },
-    {
-      number: "4",
-      title: "Receive Funds Instantly",
-      description: "Once approved, your loan is disbursed straight to your bank account. Get and spend fast."
-    }
-  ];
-
   return (
-    <section className="bg-gray-50 py-16">
+    <section className="bg-[url('/assets/images/personal-loans/howitworks-bg.svg')] bg-cover bg-center  py-16">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="mb-12">
-          <h2 className="text-3xl font-bold font-body text-gray-900 mb-2">
+        <div className="lg:mb-0 mb-12">
+          <p className="text-xl lg:text-[28px] font-bold font-body  mb-2">
             How it works
-          </h2>
+          </p>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left side - Phone mockup */}
-          <div className="">
+        <div className="grid lg:grid-cols-2 lg:gap-0 gap-17 items-center">
+          {/* Left side  */}
+          <div className="lg:pl-30">
             <div className="relative">
               <Image
                 src="/assets/images/personal-loans/phone2.svg"
                 alt="SeedFi App Interface"
                 width={420}
-                height={667}
+                height={512}
+                priority
                 className="max-w-full h-auto"
               />
             </div>
           </div>
 
-          {/* Right side - Steps */}
-          <div>
+          {/* Right side */}
+          <div className="lg:w-[70%]">
             <div className="mb-8">
-              <h3 className="text-2xl font-bold font-body text-gray-900 mb-4">
+              <p className="text-xl lg:text-2xl font-bold font-body  mb-4">
                 It takes less than 5 minutes
-              </h3>
+              </p>
             </div>
 
-            <div className="space-y-6">
-              {steps.map((step, index) => (
-                <div key={index} className="flex gap-4">
-                  <div className="flex-shrink-0">
-                    <div className="w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-bold text-sm">
+            <div className="relative flex flex-col lg:space-y-5 space-y-10">
+              {howitworks.map((step, index) => (
+                <div key={index} className="flex gap-4 relative">
+                  <div className="flex flex-col items-center relative">
+                    <div className="w-6 h-6 bg-white text-[#5285D1] rounded-full flex items-center justify-center font-bold text-sm z-10">
                       {step.number}
                     </div>
+
+                    {index < howitworks.length - 1 && (
+                      <div className="absolute top-9 left-1/2 -translate-x-1/2 h-[90%] lg:h-[70%] border-l border-dashed border-[#5285D1]" />
+                    )}
                   </div>
-                  <div>
-                    <h4 className="font-semibold text-gray-900 mb-2">
+
+                  <div className="pb-10">
+                    {" "}
+                    <p className="text-[16px] lg:text-[14px] font-semibold mb-2">
                       {step.title}
-                    </h4>
-                    <p className="text-gray-600 text-sm leading-relaxed">
+                    </p>
+                    <p className="font-body text-xs leading-relaxed">
                       {step.description}
                     </p>
                   </div>
@@ -77,16 +61,16 @@ const HowItWorks = () => {
               ))}
             </div>
 
-            <div className="flex gap-4 mt-8">
+            <div className=" pb-5 lg:pb-3 mt-10 flex gap-4 lg:mt-8">
               <Link
                 href="/calculator"
-                className="bg-secondary text-primary px-6 py-3 rounded-lg font-semibold hover:bg-yellow-300 transition-colors"
+                className="bg-secondary text-primary px-6 py-3 rounded-lg font-semibold  "
               >
                 Use Calculator
               </Link>
               <Link
                 href="/apply"
-                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold hover:bg-green-700 transition-colors"
+                className="bg-primary text-white px-6 py-3 rounded-lg font-semibold  "
               >
                 Apply Now
               </Link>

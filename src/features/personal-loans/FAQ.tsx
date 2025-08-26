@@ -2,37 +2,49 @@
 import React, { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import { faq } from "@/constants/personal-loans/faq";
 
 const FAQ = () => {
   const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const faqs = [
-    {
-      question: "What types of loans does SeedFi offer?",
-      answer: "SeedFi offers personal loans, business loans, and other financial products designed to meet your specific needs."
-    },
-    {
-      question: "What are the interest rates for SeedFi loans?", 
-      answer: "Our interest rates are competitive and vary based on your creditworthiness and loan terms. Contact us for personalized rates."
-    },
-    {
-      question: "What types of loans does SeedFi offer?",
-      answer: "SeedFi offers personal loans, business loans, and other financial products designed to meet your specific needs."
-    }
-  ];
 
   const toggleFAQ = (index: number) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="bg-secondary py-16">
+    <section className=" bg-white pb-40">
+      <div className="relative bg-[#FFFCED] py-16">
+      <div className="absolute right-1 top-5">
+        <Image
+          src="/assets/images/personal-loans/complete-circle.svg"
+          alt=""
+          width={67}
+          height={67}
+
+        />
+      </div>
+      <div className="absolute bottom-15 left-0">
+        <Image
+          src="/assets/images/personal-loans/split-circle.svg"
+          alt=""
+          width={55}
+          height={55}
+        />
+      </div>
+      <div className="absolute bottom-0 right-0">
+        <Image
+          src="/assets/images/personal-loans/bottom-circle.svg"
+          alt=""
+          width={25}
+          height={25}
+        />
+      </div>
       <div className="max-w-4xl mx-auto px-6">
         <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold font-body text-gray-900 mb-4">
+          <p className="lg:text-[32px] text-xl font-bold font-body  mb-4">
             Got questions? We've got answers.
-          </h2>
-          <p className="text-lg text-gray-600 font-body">
+          </p>
+          <p className="text-sm lg:text-xl text-gray-600 font-body">
             Looking for answers? Check out some common questions below,{" "}
             <br className="hidden md:block" />
             or{" "}
@@ -44,20 +56,17 @@ const FAQ = () => {
         </div>
 
         <div className="space-y-4 mb-12">
-          {faqs.map((faq, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-lg border border-gray-200"
-            >
+          {faq.map((faq, index) => (
+            <div key={index} className=" rounded-lg ">
               <button
                 onClick={() => toggleFAQ(index)}
-                className="w-full px-6 py-4 text-left flex justify-between items-center hover:bg-gray-50 transition-colors"
+                className="w-full px-6 py-4 text-left flex justify-between items-center "
               >
-                <span className="font-medium text-gray-900">
+                <span className="lg:text-[16px] text-sm font-medium ">
                   {faq.question}
                 </span>
                 <Image
-                  src="/assets/icons/plus.svg"
+                  src="/assets/icons/personal-loans/plus.svg"
                   alt=""
                   width={20}
                   height={20}
@@ -83,6 +92,7 @@ const FAQ = () => {
             View More
           </Link>
         </div>
+      </div>
       </div>
     </section>
   );

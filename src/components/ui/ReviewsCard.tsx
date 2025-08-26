@@ -16,7 +16,7 @@ const ReviewCard: React.FC<ReviewCardProps> = ({ review }) => {
     >
       {/* Quote icon */}
       <div className="mb-4">
-        <div className="w-8 h-8 bg-white rounded-full flex items-center justify-center">
+        <div className="w-13.5 h-13 bg-white rounded-[8px] flex items-center justify-center">
           <span className="text-gray-600 text-lg font-bold">
             <Image
               src="/assets/icons/quote.svg"

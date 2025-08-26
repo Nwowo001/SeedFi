@@ -10,9 +10,9 @@ const PersonalLoans = () => {
     <div>
       <PersonalLoanHero />
       <HowItWorks/>
-      {/* <WhoCanApply/>
+      <WhoCanApply/>
       <TrustedByIndividuals/>
-      <FAQ/> */}
+      <FAQ/>
     </div>
   );
 };

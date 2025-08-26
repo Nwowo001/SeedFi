@@ -8,10 +8,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -20,10 +16,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -32,10 +24,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -44,10 +32,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -56,10 +40,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -68,10 +48,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -80,10 +56,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -92,10 +64,6 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
   {
     review:
@@ -104,9 +72,5 @@ export const reviews: Reviews[] = [
     location: "Pentrust Business Solutions Ltd",
     icon: "/assets/icons/apostrophe.svg",
     bgColor: "#EAF3EE",
-    // cardConfig: {
-    //   width: 302,
-    //   height: 291,
-    // },
   },
 ];

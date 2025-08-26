@@ -22,7 +22,6 @@ const AboutBlog = () => {
     }
   };
 
-  // Track when at start / end
   const checkScrollPosition = () => {
     if (!scrollRef.current) return;
     const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;

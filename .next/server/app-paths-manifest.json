@@ -1,4 +1,4 @@
 {
-  "/product/seedscore/page": "app/product/seedscore/page.js",
-  "/product/personal-loan/page": "app/product/personal-loan/page.js"
+  "/page": "app/page.js",
+  "/about/page": "app/about/page.js"
 }

@@ -1,4 +1,4 @@
-import Carousel from "@/components/ui/Carousel";
+import Carousel from "@/components/ui/OurPartners";
 import React from "react";
 
 const OurPartners = () => {

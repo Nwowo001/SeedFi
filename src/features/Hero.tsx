@@ -175,7 +175,7 @@ const Hero = () => {
         </div>
 
         {/* NDIC Badge - Bottom center */}
-        <div className="relative bottom-0 right-0  flex justify-center lg:justify-end items-center gap-3 mt-12 lg:mt-12 lg:mr-14">
+        <div className="absolute bottom-10 right-40  flex justify-center lg:justify-end items-center gap-3 mt-12 lg:mt-12 lg:mr-14">
           <Image
             src="/assets/images/audit-badge.svg"
             alt="NDIC Badge"
