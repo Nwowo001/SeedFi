@@ -101,7 +101,7 @@ input[type="range"]::-webkit-slider-thumb {
   border-radius: 50%;
   background: #2A8851;
   cursor: pointer;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 5px 16px rgba(0, 0, 0, 0.15);
 }
 
 input[type="range"]::-moz-range-thumb {

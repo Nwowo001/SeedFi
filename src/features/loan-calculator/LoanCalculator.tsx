@@ -37,27 +37,31 @@ export default function LoanCalculator() {
   const monthly = calculated && duration > 0 ? total / duration : 0;
 
   return (
-    <section className="min-h-screen bg-white pt-32 pb-16">
-      <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12">
+    <section className=" bg-white pt-25 lg:pt-45 pb-16">
+      <div className=" mx-auto lg:px-25 px-4 grid md:grid-cols-2 gap-12">
         {/* LEFT SIDE */}
-        <div className="p-8">
-          <h2 className="text-3xl font-semibold mb-2">
-            <span className="text-[#2A8851]">SeedFi</span> Loan Calculator
-          </h2>
-          <p className="text-gray-600 mb-8">
-            Estimate your monthly payments with our calculator
-          </p>
-
+        <div className="py-8 px-6">
+          <div className="lg:text-start text-center">
+            <p className="text-[28px] lg:text-[32px] font-semibold mb-2">
+              <span className="text-[#2A8851]">
+                Seed<span className="italic">Fi</span>
+              </span>{" "}
+              Loan Calculator
+            </p>
+            <p className="text-[#84868C] lg:text-[16px] text-sm   mb-10">
+              Estimate your monthly payments with our calculator
+            </p>
+          </div>
           {/* Loan Amount */}
           <div className="mb-6">
-            <label className="block text-sm font-medium mb-3">
+            <label className="block  lg:text-[16px] text-sm   font-medium mb-3">
               Loan Amount{" "}
-              <span className="text-gray-500">
+              <span className="text-[#84868C]">
                 (How much money are you looking for?)
               </span>
             </label>
-            <div className="flex items-center gap-2 px-4 py-3 mb-4 rounded-lg bg-white">
-              <span className="text-gray-500 font-medium">₦</span>
+            <div className="flex items-center gap-2 px-4 py-3  rounded-lg bg-white">
+              <span className="text-[#84868C] font-medium">₦</span>
               <input
                 type="text"
                 placeholder="0.00"
@@ -65,7 +69,7 @@ export default function LoanCalculator() {
                 onChange={(e) =>
                   setAmount(Number(e.target.value.replace(/,/g, "")))
                 }
-                className="w-full outline-none bg-transparent text-lg"
+                className="w-full outline-none bg-transparent text-2xl"
               />
             </div>
             <input
@@ -83,7 +87,7 @@ export default function LoanCalculator() {
                 }%, #e5e7eb 100%)`,
               }}
             />
-            <div className="flex justify-between text-sm text-gray-500 mt-1">
+            <div className="flex justify-between font-body text-sm   text-[#84868C] mt-5">
               <span>₦3,000</span>
               <span>₦1,500,000</span>
             </div>
@@ -91,21 +95,21 @@ export default function LoanCalculator() {
 
           {/* Loan Duration */}
           <div className="mb-6">
-            <label className="block text-sm font-medium mb-3">
+            <label className="block lg:text-[16px] text-sm   font-medium mb-3">
               Loan Duration{" "}
-              <span className="text-gray-500">
+              <span className="text-[#84868C]">
                 (How much time do you need to pay back?)
               </span>
             </label>
-            <div className="flex items-center gap-2 px-4 py-3 mb-4  rounded-lg">
+            <div className="flex items-center gap-2 px-4 py-3   rounded-lg">
               <input
                 type="text"
                 placeholder="0"
                 value={duration}
                 onChange={(e) => handleDurationChange(Number(e.target.value))}
-                className="w-full outline-none bg-transparent text-lg"
+                className="w-full outline-none bg-transparent text-2xl"
               />
-              <span className="text-gray-500 font-medium">months</span>
+              <span className="text-[#84868C] font-medium">months</span>
             </div>
             <input
               type="range"
@@ -122,7 +126,7 @@ export default function LoanCalculator() {
                 }%, #e5e7eb 100%)`,
               }}
             />
-            <div className="flex justify-between text-sm text-gray-500 mt-1">
+            <div className="flex justify-between font-body text-sm   text-[#84868C] mt-5">
               <span>2 months</span>
               <span>12 months</span>
             </div>
@@ -130,19 +134,19 @@ export default function LoanCalculator() {
 
           {/* Interest Rate */}
           <div className="mb-8">
-            <label className="block text-sm font-medium mb-3">
+            <label className="block lg:text-[16px] text-sm   font-medium mb-3">
               Interest Rate{" "}
-              <span className="text-gray-500">(Charged monthly)</span>
+              <span className="text-[#84868C]">(Charged monthly)</span>
             </label>
-            <div className="flex items-center gap-2 px-4 py-3 mb-4  rounded-lg">
+            <div className="flex items-center gap-2 px-4 py-3   rounded-lg">
               <input
                 type="text"
                 placeholder="1.2"
                 value={rate}
                 onChange={(e) => setRate(Number(e.target.value))}
-                className="w-full outline-none bg-transparent text-lg"
+                className="w-full outline-none bg-transparent text-2xl"
               />
-              <span className="text-gray-500 font-medium">%</span>
+              <span className="text-[#84868C] font-medium">%</span>
             </div>
             <input
               type="range"
@@ -160,88 +164,101 @@ export default function LoanCalculator() {
                 }%, #e5e7eb 100%)`,
               }}
             />
-            <div className="flex justify-between text-sm text-gray-500 mt-2">
+            <div className="flex justify-between font-body text-sm   text-[#84868C] mt-2">
               <span>1.2%</span>
               <span>20%</span>
             </div>
           </div>
-
-          <button
-            onClick={calculateLoan}
-            className="bg-[#2A8851] text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold"
-          >
-            Calculate
-          </button>
+          <div className="flex justify-center lg:justify-start">
+            <button
+              onClick={calculateLoan}
+              className="bg-[#2A8851] text-white px-8 py-3 rounded-lg hover:bg-green-700 transition-colors font-semibold"
+            >
+              Calculate
+            </button>
+          </div>
         </div>
 
         {/* RIGHT SIDE - Results */}
-        <div className="bg-[#E5EDF8] rounded-2xl p-6 h-fit">
-          <h2 className="text-2xl font-bold text-[#2A8851] mb-6">SeedFi</h2>
+        <div className="pt-20 hidden lg:block">
+          <div className=" bg-[#E5EDF8] rounded-[30px] p-10 h-fit">
+            <p className="text-3xl font-semibold text-[#2A8851] mb-6">
+              Seed<span className="italic">Fi</span>
+            </p>
 
-          {/* Amount */}
-          <div className="mb-4">
-            <div className="flex items-center gap-2 rounded-lg px-3 py-3 bg-white">
-              <span className="text-gray-500">₦</span>
-              <input
-                type="text"
-                readOnly
-                value={amount.toLocaleString()}
-                className="w-full outline-none bg-transparent"
-              />
+            {/* Amount */}
+            <div className="">
+              <div className="flex items-center gap-2 rounded-lg px-3 py-10 bg-white shadow">
+                <span className=" text-2xl">₦</span>
+                <input
+                  type="text"
+                  readOnly
+                  value={amount.toLocaleString()}
+                  className="w-full outline-none bg-transparent text-2xl  "
+                />
+              </div>
             </div>
-          </div>
 
-          {/* Interest */}
-          <div className="mb-4">
-            <label className="text-sm block mb-1">Total Interest</label>
-            <div className="flex items-center gap-2 rounded-lg px-3 py-3 bg-white">
-              <span className="text-gray-500">₦</span>
-              <input
-                type="text"
-                readOnly
-                value={interest.toLocaleString()}
-                className="w-full outline-none bg-transparent"
-              />
+            {/* Interest */}
+            <div className="mb-6 pt-5 ">
+              <label className="text-sm text-[#84868C] block mb-1">
+                Total Interest
+              </label>
+              <div className="flex justify-end pt-2">
+                <div className="w-[75%] shadow flex justify-end items-center gap-2 rounded-lg px-3 py-3 bg-white">
+                  <span>₦</span>
+                  <input
+                    type="text"
+                    readOnly
+                    value={monthly.toLocaleString()}
+                    className="w-full outline-none bg-transparent"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Monthly Repayment */}
-          <div className="mb-6">
-            <label className="text-sm block mb-1">Monthly Repayment</label>
-            <div className="flex items-center gap-2 rounded-lg px-3 py-3 bg-white">
-              <span className="text-gray-500">₦</span>
-              <input
-                type="text"
-                readOnly
-                value={monthly.toLocaleString()}
-                className="w-full outline-none bg-transparent"
-              />
+            {/* Monthly Repayment */}
+            <div className="mb-6 pt-5">
+              <label className="text-sm text-[#84868C] block mb-1">
+                Monthly Repayment
+              </label>
+              <div className="flex justify-end pt-2">
+                <div className=" w-[75%] shadow flex justify-end items-center gap-2 rounded-lg px-3 py-3 bg-white">
+                  <span>₦</span>
+                  <input
+                    type="text"
+                    readOnly
+                    value={monthly.toLocaleString()}
+                    className="w-full outline-none bg-transparent"
+                  />
+                </div>
+              </div>
             </div>
-          </div>
 
-          {/* Buttons */}
-          <div className="flex gap-3 items-center justify-center">
-            <button
-              onClick={() => {
-                setAmount(0);
-                setDuration(0);
-                setRate(1.2);
-                setCalculated(false);
-              }}
-              className=" px-4 py-2 border rounded-lg text-gray-600  hover:bg-gray-50 transition-colors text-sm"
-            >
-              Reset
-            </button>
-            <button
-              disabled={!calculated}
-              className={` px-4 py-2 rounded-lg transition-colors text-sm ${
-                calculated
-                  ? "bg-[#2A8851] text-white hover:bg-green-700"
-                  : "bg-gray-300 text-gray-500 cursor-not-allowed"
-              }`}
-            >
-              Apply for a Loan
-            </button>
+            {/* Buttons */}
+            <div className="flex gap-6 items-center justify-center pt-15">
+              <button
+                onClick={() => {
+                  setAmount(0);
+                  setDuration(0);
+                  setRate(1.2);
+                  setCalculated(false);
+                }}
+                className=" px-15 py-2.5 border rounded-lg   hover:bg-gray-50 transition-colors lg:text-[16px] text-sm  "
+              >
+                Reset
+              </button>
+              <button
+                disabled={!calculated}
+                className={` px-4.5 py-2.5 rounded-lg transition-colors lg:text-[16px] text-sm   ${
+                  calculated
+                    ? "bg-[#2A8851] text-white hover:bg-green-700"
+                    : "bg-gray-300 text-[#84868C] cursor-not-allowed"
+                }`}
+              >
+                Apply for a Loan
+              </button>
+            </div>
           </div>
         </div>
       </div>
