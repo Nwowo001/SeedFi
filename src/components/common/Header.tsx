@@ -25,7 +25,7 @@ const Header = () => {
 
         <Link
           href={"/"}
-          className="bg-green-700 text-white hover:bg-white hover:text-green-700 px-6 py-2 rounded-xl font-semibold transition-colors hidden lg:block"
+          className="bg-primary text-white hover:bg-white hover:text-green-700 px-6 py-2 rounded-xl font-semibold transition-colors hidden lg:block"
         >
           Sign In
         </Link>

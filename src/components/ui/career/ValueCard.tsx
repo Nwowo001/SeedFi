@@ -9,7 +9,7 @@ interface Props {
 const ValueCard: React.FC<Props> = ({ value }) => {
   return (
     <div className="text-start bg-white p-6 rounded-3xl">
-      <div className="w-16 h-16  mb-10  flex  ">
+      <div className="w-16 h-16  mb-7  flex  ">
         <Image
           src={value.icon}
           alt={value.title}

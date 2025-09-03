@@ -1,5 +1,6 @@
 "use client";
-import BlogCards from "@/components/ui/BlogCards";
+import BlogCard from "@/components/ui/BlogCard";
+import { blog } from "@/constants/blog";
 import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 
@@ -22,7 +23,6 @@ const Blog = () => {
     }
   };
 
-  // Track when at start / end
   const checkScrollPosition = () => {
     if (!scrollRef.current) return;
     const { scrollLeft, scrollWidth, clientWidth } = scrollRef.current;
@@ -34,7 +34,7 @@ const Blog = () => {
     const container = scrollRef.current;
     if (!container) return;
 
-    checkScrollPosition(); // initialize
+    checkScrollPosition();
 
     container.addEventListener("scroll", checkScrollPosition);
     return () => container.removeEventListener("scroll", checkScrollPosition);
@@ -43,18 +43,16 @@ const Blog = () => {
   return (
     <section className="bg-white py-16">
       <div className="relative max-w-7xl mx-auto px-6">
-        {/* Title & Arrows */}
         <div className="flex justify-between items-center mb-6">
           <p className="text-xl lg:text-2xl font-bold font-body text-zinc-900">
             Your Guide to Smarter Money Moves
           </p>
-          {/* Arrows - hidden on mobile */}
           <div className="hidden md:flex gap-4">
             <button
               onClick={() => scroll("left")}
               disabled={atStart}
               className={`p-2 rounded-full ${
-                atStart ? " opacity-50 cursor-not-allowed" : ""
+                atStart ? " opacity-30 cursor-not-allowed" : ""
               }`}
             >
               <Image
@@ -86,7 +84,7 @@ const Blog = () => {
           ref={scrollRef}
           className="overflow-x-auto scrollbar-hide scroll-smooth pb-7"
         >
-          <BlogCards />
+          <BlogCard data={blog} variant="default" />
         </div>
       </div>
     </section>

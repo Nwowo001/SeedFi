@@ -1,5 +1,13 @@
-import BlogPage from "@/features/blog/BlogPage";
+import BlogHero from "@/features/blog/BlogHero";
+import MainBlog from "@/features/blog/MainBlog";
+import NewsLetter from "@/features/blog/NewsLetter";
 
 export default function Blog() {
-  return <BlogPage />;
+  return (
+    <>
+      <BlogHero />
+      <MainBlog />
+      <NewsLetter />
+    </>
+  );
 }

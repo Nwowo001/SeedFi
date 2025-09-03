@@ -4,8 +4,8 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <section className="relative pb-35 lg:pb-0 bg-[url('/assets/images/background-texture.svg')] bg-cover bg-center">
-      <div className="absolute bottom-0 -left-0 ">
+    <section className="min-h-screen relative pb-35 lg:pb-15 bg-[url('/assets/images/background-texture.svg')] bg-cover bg-center">
+      <div className="absolute lg:bottom-8 lg:left-5 bottom-0 left-0">
         <Image
           src="/assets/images/sphere-full.svg"
           alt="Decorative sphere"
@@ -17,10 +17,10 @@ const Hero = () => {
         <div className="flex width-50% flex-col lg:flex-row items-start lg:items-center justify-between relative">
           {/* Left content */}
           <div className="flex-1 max-w-2xl mb-12 lg:mb-0 lg:pr-12 relative z-10 w-50%">
-            <p className="font-figtree font-extrabold text-2xl sm:text-4xl md:text-5xl lg:text-6xl leading-snug text-gray-900 mb-6">
+            <p className="font-figtree font-extrabold text-2xl sm:text-4xl md:text-5xl lg:text-5xl leading-snug text-gray-900 mb-6">
               <span className="whitespace-nowrap">
                 Making credit{" "}
-                <span className="relative inline-block text-green-700 italic">
+                <span className="relative inline-block text-primary italic">
                   accessible
                   <Image
                     src="/assets/images/accessible-underline.svg"
@@ -35,7 +35,7 @@ const Hero = () => {
               to everyone
             </p>
 
-            <p className="font-figtree font-medium text-sm sm:text-base md:text-lg text-gray-600 mb-8 leading-relaxed max-w-lg">
+            <p className="font-figtree font-medium text-sm sm:text-base md:text-lg  mb-8 leading-relaxed max-w-lg">
               Flexible terms. Competitive rates. Personal support.
               <br />
               Take control of your finances and build a{" "}
@@ -143,7 +143,7 @@ const Hero = () => {
           </div>
 
           {/* Right content  */}
-          <div className="flex-1 width-50% flex justify-center lg:justify-end items-center relative">
+          <div className="flex-1 width-50% flex justify-center lg:justify-end items-start relative lg:-top-15">
             <div className="relative">
               <div className="relative z-20">
                 <Image
@@ -156,7 +156,7 @@ const Hero = () => {
                 />
               </div>
 
-              <div className="absolute -top-0 -right-27 ">
+              <div className="absolute top-15 -right-27 ">
                 <Image
                   src="/assets/images/split-sphere.svg"
                   alt="Decorative sphere"
@@ -168,7 +168,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute bottom-10 right-40  flex justify-center lg:justify-end items-center gap-3 mt-12 lg:mt-12 lg:mr-14">
+        <div className="absolute lg:bottom-20 lg:right-10 bottom-10 right-30  flex justify-center lg:justify-end items-center gap-3 mt-12 lg:mt-12 lg:mr-14">
           <Image
             src="/assets/images/audit-badge.svg"
             alt="NDIC Badge"

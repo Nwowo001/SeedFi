@@ -1,5 +1,6 @@
 "use client";
-import AboutBlogCards from "@/components/ui/about/AboutBlogCards";
+import BlogCard from "@/components/ui/BlogCard";
+import { aboutblog } from "@/constants/about-us/aboutblog";
 import Image from "next/image";
 import React, { useRef, useState, useEffect } from "react";
 
@@ -89,7 +90,7 @@ const AboutBlog = () => {
           ref={scrollRef}
           className="overflow-x-auto scrollbar-hide scroll-smooth"
         >
-          <AboutBlogCards />
+          <BlogCard data={aboutblog} variant="about" />
         </div>
       </div>
     </section>

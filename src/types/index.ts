@@ -67,3 +67,13 @@ export interface Blog {
   author: string;
   date: string;
 }
+
+export interface SingleCardProps {
+  item: Blog;
+  variant?: "default" | "about";
+}
+
+export interface MultipleCardsProps {
+  data: Blog[];
+  variant?: "default" | "about";
+}

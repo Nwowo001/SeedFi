@@ -51,10 +51,10 @@ const Footer = (props: Props) => {
           <h2>Legal</h2>
           <ul className="mt-2 flex flex-col gap-3">
             <li>
-              <Link href={""}>Privacy Policy</Link>
+              <Link href={"/privacy-policy"}>Privacy Policy</Link>
             </li>
             <li>
-              <Link href={""}>Terms & Condition</Link>
+              <Link href={"/termsandconditions"}>Terms & Condition</Link>
             </li>
           </ul>
         </div>

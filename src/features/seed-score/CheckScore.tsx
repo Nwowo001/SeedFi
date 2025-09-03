@@ -89,11 +89,11 @@ const CheckScore = () => {
             />
             <label htmlFor="agreeToTerms" className="w-[80%] lg:w-[45%] text-[12px]  font-normal font-body leading-relaxed">
               By using this service, you acknowledge and agree to comply with SeedFi's{' '}
-              <a href="/terms" className="text-primary hover:underline">
+              <a href="/termsandconditions" className="text-primary hover:underline">
                 Terms & Conditions
               </a>
               {' '}and{' '}
-              <a href="/privacy" className="text-primary hover:underline">
+              <a href="/privacy-policy" className="text-primary hover:underline">
                 Privacy Policy
               </a>
             </label>
