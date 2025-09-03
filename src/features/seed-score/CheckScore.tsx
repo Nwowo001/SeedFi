@@ -2,8 +2,10 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
 const CheckScore = () => {
+  const router = useRouter();
   const [formData, setFormData] = useState({
     bvn: "",
     dateOfBirth: "",
@@ -20,7 +22,7 @@ const CheckScore = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    router.push('/result');
   };
 
   return (
