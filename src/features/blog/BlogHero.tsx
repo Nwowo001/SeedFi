@@ -8,7 +8,7 @@ const BlogHero = () => {
         <p className="text-[28px] lg:text-[56px] font-bold  mb-9">
           Insights to Power Your Financial Journey
         </p>
-        <p className="text-[16px] lg:text-xl   mx-auto lg:w-[45%] pb-20 lg:pb-40">
+        <p className="text-[16px] lg:text-xl   mx-auto lg:w-[57%] w-[67%] pb-20 lg:pb-40">
           Smart content for smarter choices — whether you're just starting out
           or already on your way.
         </p>

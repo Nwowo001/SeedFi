@@ -71,10 +71,10 @@ const MainBlog = () => {
               <button
                 key={category}
                 onClick={() => setActiveCategory(category)}
-                className={`px-4 py-2 rounded-full text-sm transition-colors ${
+                className={`px-4 py-3 border border-[#EAF3EE] rounded-lg text-sm transition-colors ${
                   activeCategory === category
-                    ? "bg-[#2A8851] text-white"
-                    : "bg-white text-gray-600 hover:bg-gray-100"
+                    ? "bg-[#EAF3EE] text-primary"
+                    : "bg-white text-black hover:bg-[#EAF3EE]"
                 }`}
               >
                 {category}
@@ -82,18 +82,27 @@ const MainBlog = () => {
             ))}
           </div>
         </div>
+        <div className="flex flex-col sm:flex-row gap-3  rounded-lg px-3 py-2 w-full sm:w-[400px]">
+          <div className="relative  flex-1">
+            <Image
+              src="/assets/icons/lens.svg"
+              alt="Search"
+              width={24}
+              height={24}
+              className="absolute top-1/2 left-3 -translate-y-1/2"
+            />
 
-        <div className="flex gap-2 pt-10">
-          <input
-            type="text"
-            placeholder="Search by keyword"
-            value={searchTerm}
-            onChange={(e) => setSearchTerm(e.target.value)}
-            className="px-4 py-2 border border-gray-300 rounded-lg w-64 outline-none focus:border-[#2A8851]"
-          />
-          <button className="bg-[#2A8851] text-white px-6 py-2 rounded-lg hover:bg-green-700">
-            Search
-          </button>
+            <input
+              type="text"
+              placeholder="Search by keyword"
+              value={searchTerm}
+              onChange={(e) => setSearchTerm(e.target.value)}
+              className="pl-13  py-3 border border-gray-300 rounded-2xl w-full outline-none focus:border-[#2A8851]"
+            />
+            <button className="text-sm absolute top-1/2 right-3 -translate-y-1/2 bg-[#2A8851] text-white px-3 py-2 rounded-lg hover:bg-green-700">
+              Search
+            </button>
+          </div>
         </div>
       </div>
 
@@ -130,7 +139,7 @@ const MainBlog = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-10 lg:place-items-stretch place-items-center">
         {currentItems.map((item, index) => (
           <BlogCard key={startIndex + index} item={item} variant="default" />
         ))}

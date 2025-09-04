@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
 
 export default function ContactPage() {
@@ -26,7 +27,7 @@ export default function ContactPage() {
     <section className="relative min-h-screen bg-white pt-32 lg:pt-55 pb-16 px-8 lg:px-6">
       <div className="max-w-6xl mx-auto  gap-16">
         <p className="text-center lg:text-start lg:text-5xl text-[28px] font-bold lg:w-[40%]  leading-relaxed">
-          Got a Question? {" "} We're Listening.
+          Got a Question? We're Listening.
         </p>
         <div className="text-[16px] lg:text-xl pt-5  lg:pb-0 pb-8 lg:text-start text-center ">
           <p className="hidden lg:inline"> Partnerships? Enquiries? Support?</p>
@@ -101,7 +102,7 @@ export default function ContactPage() {
                   The Dataseed Company Limited.
                 </p>
                 <p className="font-semibold text-gray-900">
-                  21/22 Teslim Elias Close, Victoria Island, Lagos, Nigeria
+                  Plot 11,BLK 94 Providence Street, Lekki.Lagos.{" "}
                 </p>
                 <p className="text-sm text-gray-500">Location</p>
               </div>
@@ -194,9 +195,12 @@ export default function ContactPage() {
                 By submitting this form, you consent to the storage of your
                 information and agree to be contacted using the details
                 provided. Your submission indicates acceptance of our full{" "}
-                <span className="text-[#2A8851] underline cursor-pointer">
-                  Terms & conditions
-                </span>
+                <Link href="/termsandconditions">
+                  {" "}
+                  <span className="text-[#2A8851] underline cursor-pointer">
+                    Terms & conditions
+                  </span>
+                </Link>
                 .
               </label>
             </div>

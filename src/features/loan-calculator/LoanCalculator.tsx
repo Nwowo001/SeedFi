@@ -38,7 +38,7 @@ export default function LoanCalculator() {
 
   return (
     <section className=" bg-white pt-25 lg:pt-45 pb-16">
-      <div className=" mx-auto lg:px-25 px-4 grid md:grid-cols-2 gap-12">
+      <div className="flex flex-row justify-between mx-auto lg:px-25 px-4 gap-12">
         {/* LEFT SIDE */}
         <div className="py-8 px-6">
           <div className="lg:text-start text-center">
@@ -61,7 +61,7 @@ export default function LoanCalculator() {
               </span>
             </label>
             <div className="flex items-center gap-2 px-4 py-3  rounded-lg bg-white">
-              <span className="text-[#84868C] font-medium">₦</span>
+              <span className="text-[#84868C] text-2xl font-medium">₦</span>
               <input
                 type="text"
                 placeholder="0.00"
@@ -101,16 +101,19 @@ export default function LoanCalculator() {
                 (How much time do you need to pay back?)
               </span>
             </label>
-            <div className="flex items-center gap-2 px-4 py-3   rounded-lg">
+            <div className="flex items-center px-4 py-3 rounded-lg bg-white ">
               <input
                 type="text"
                 placeholder="0"
                 value={duration}
                 onChange={(e) => handleDurationChange(Number(e.target.value))}
-                className="w-full outline-none bg-transparent text-2xl"
+                className="outline-none bg-transparent text-2xl w-[30px]"
               />
-              <span className="text-[#84868C] font-medium">months</span>
+              <span className="text-[#84868C] text-2xl font-medium">
+                months
+              </span>
             </div>
+
             <input
               type="range"
               min={2}
@@ -138,15 +141,15 @@ export default function LoanCalculator() {
               Interest Rate{" "}
               <span className="text-[#84868C]">(Charged monthly)</span>
             </label>
-            <div className="flex items-center gap-2 px-4 py-3   rounded-lg">
+            <div className=" flex items-center px-4 py-3 rounded-lg bg-white ">
               <input
                 type="text"
                 placeholder="1.2"
                 value={rate}
                 onChange={(e) => setRate(Number(e.target.value))}
-                className="w-full outline-none bg-transparent text-2xl"
+                className="outline-none bg-transparent text-2xl w-[50px]"
               />
-              <span className="text-[#84868C] font-medium">%</span>
+              <span className="text-[#84868C] text-2xl font-medium">%</span>
             </div>
             <input
               type="range"
@@ -180,15 +183,15 @@ export default function LoanCalculator() {
         </div>
 
         {/* RIGHT SIDE - Results */}
-        <div className="pt-20 hidden lg:block">
-          <div className=" bg-[#E5EDF8] rounded-[30px] p-10 h-fit">
-            <p className="text-3xl font-semibold text-[#2A8851] mb-6">
+        <div className="pt-25 w-[45%]  hidden lg:block">
+          <div className=" bg-[#E5EDF8] rounded-[30px] py-5 px-10 h-fit">
+            <p className="text-3xl font-semibold text-[#2A8851] mb-3">
               Seed<span className="italic">Fi</span>
             </p>
 
             {/* Amount */}
             <div className="">
-              <div className="flex items-center gap-2 rounded-lg px-3 py-10 bg-white shadow">
+              <div className="flex items-center gap-2 rounded-lg px-3 py-6 bg-white shadow">
                 <span className=" text-2xl">₦</span>
                 <input
                   type="text"
@@ -200,7 +203,7 @@ export default function LoanCalculator() {
             </div>
 
             {/* Interest */}
-            <div className="mb-6 pt-5 ">
+            <div className="mb-2 pt-10 ">
               <label className="text-sm text-[#84868C] block mb-1">
                 Total Interest
               </label>
@@ -236,7 +239,7 @@ export default function LoanCalculator() {
             </div>
 
             {/* Buttons */}
-            <div className="flex gap-6 items-center justify-center pt-15">
+            <div className="flex gap-6 items-center justify-center pt-7">
               <button
                 onClick={() => {
                   setAmount(0);
