@@ -62,10 +62,12 @@ export interface Reviews {
   bgColor?: string;
 }
 export interface Blog {
+  id: string;
   image: string;
   title: string;
   author: string;
   date: string;
+  content?: string;
 }
 
 export interface SingleCardProps {
