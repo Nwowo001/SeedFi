@@ -5,7 +5,7 @@ interface ResultHeroProps {
   score?: number;
 }
 
-const ResultHero: React.FC<ResultHeroProps> = ({ score = 707 }) => {
+const ResultHero: React.FC<ResultHeroProps> = ({ score = 507 }) => {
   const getArrowRotation = (score: number) => {
     const minScore = 200;
     const maxScore = 1000;
@@ -17,14 +17,12 @@ const ResultHero: React.FC<ResultHeroProps> = ({ score = 707 }) => {
     <section className="rounded-lg bg-[linear-gradient(to_bottom,white,white_40%,white_70%,#2A885199)]">
       <main className="pt-40 md:pt-56">
         <div className="max-w-4xl mx-auto text-center px-6">
-          {/* Score Heading */}
           <h1 className="text-[28px] font-bold mb-4">
             Your SeedScore is,{" "}
             <span className="text-green-600 text-[56px]">{score}!</span>
           </h1>
           <p className="text-[#84868C] pb-30">You're in great shape.</p>
 
-          {/* Gauge Chart */}
           <div className="relative mb-8 flex justify-center">
             <div className="relative">
               {/* Arc background */}
@@ -62,7 +60,7 @@ const ResultHero: React.FC<ResultHeroProps> = ({ score = 707 }) => {
               </div>
             </div>
 
-            {/* Labels around arc */}
+            {/* Labels  */}
             <div className="absolute top-35 left-50 text-[18px] text-red-500 font-medium">
               Poor
             </div>

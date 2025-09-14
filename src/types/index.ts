@@ -79,3 +79,13 @@ export interface MultipleCardsProps {
   data: Blog[];
   variant?: "default" | "about";
 }
+
+export interface GetStartedSteps{
+  title: string;
+  desc: string;
+}
+export interface BusinessBenefits{
+  title: string;
+  desc: string;
+  icon?: any;
+}

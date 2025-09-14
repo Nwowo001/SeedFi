@@ -180,3 +180,4 @@ const ArticlePage: React.FC<ArticlePageProps> = ({ article }) => {
 };
 
 export default ArticlePage;
+

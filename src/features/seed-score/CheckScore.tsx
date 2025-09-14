@@ -22,7 +22,7 @@ const CheckScore = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    router.push('/result');
+    router.push('/product/seedscore/result');
   };
 
   return (
@@ -78,7 +78,6 @@ const CheckScore = () => {
             </div>
           </div>
 
-          {/* Terms and Conditions Checkbox */}
           <div className="flex items-start space-x-3">
             <input
               type="checkbox"
@@ -101,7 +100,6 @@ const CheckScore = () => {
             </label>
           </div>
 
-          {/* Submit Button */}
           <div className="flex justify-center pt-6 lg:pb-0 pb-15">
             <button
               type="submit"
